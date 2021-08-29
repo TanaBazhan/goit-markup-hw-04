@@ -97,6 +97,9 @@ color: var(--accent-color);
   display: flex;
   align-items: center;
 }
+.icon-tel {
+  fill: currentColor;
+}
 .header-tel {
   display: block;
 font-weight: 500;
@@ -104,8 +107,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: var(--main-text-color) ;
-margin-right: 50px;
+color: var(--main-text-color) 
 }
 .header-mail {
   display: block;
@@ -115,6 +117,7 @@ margin-right: 50px;
   letter-spacing: 0.02em;
   
   color: var(--main-text-color) ;
+  margin-right: 50px;
   }
   
 .hero {
