@@ -97,6 +97,7 @@ color: var(--accent-color);
   margin-left: auto;
   display: flex;
   align-items: center;
+  
 }
 .icon-tel,
 .icon-mail {
@@ -110,7 +111,9 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: var(--main-text-color) 
+color: var(--main-text-color);
+width: 142px;
+justify-content: space-between;
 }
 .header-mail {
   display: flex;
@@ -121,6 +124,8 @@ color: var(--main-text-color)
   letter-spacing: 0.02em;
   
   color: var(--main-text-color) ;
+  width: 161px;
+justify-content: space-between;
   margin-right: 50px;
   }
   
@@ -129,6 +134,8 @@ color: var(--main-text-color)
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../img/fon-min.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
 }
 .hero-container {
 display: flex;
@@ -201,6 +208,10 @@ letter-spacing: 0.03em;
 
 color: var(--main-text-color);
 }
+.icon-features {
+justify-content: center;
+align-items: center;
+}
 .images {
   background-color: var(--secondary-background-color);
   display: flex;
@@ -239,6 +250,9 @@ letter-spacing: 0.03em;
 color: var(--secondary-title-color);
 margin-bottom: 50px;
 }
+.team-item {
+  box-shadow: 1px 1px 3px 2px var(--main-text-color);
+}
 .team-name-container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -261,6 +275,42 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--main-text-color);
+}
+.icon-group:hover,
+.icon-group:focus {
+color: var(--main-title-color);
+background-color: var(--accent-color);
+}
+.icon-group {
+  color: #AFB1B8;
+}
+.container-customers {
+justify-content: center;
+align-items: flex-start;
+}
+.customers-tittle {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+color: var(--secondary-title-color);
+margin-bottom: 50px;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-group-customers:focus,
+.icon-group-customers:hover {
+  color: var(--accent-color);
+}
+.icon-group-customers {
+  color: #AFB1B8;
+}
+.group {
+  fill: currentColor;
 }
 /* нижня частина студії */
 .contacts {
@@ -301,6 +351,7 @@ color: var(--accent-color);
 }
 .icon-list{
   display: flex;
+  justify-content: space-around;
 }
 .contacts-logo {
   font-family: Raleway;
@@ -313,11 +364,21 @@ color: var(--main-title-color);
 width: 145px;
 height: 31px;
 margin-bottom: 20px;
+margin-right: 156px;
 }
 span {
   color: var(--accent-color);
 }
+.container-footer-name {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+height: 80px;
+
+}
 .name-footer {
+  display: block;
+  margin-bottom: 20px;
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
@@ -327,11 +388,12 @@ color: var(--primery-background-color);
 .footer-items::not(:last-child) {
     margin-right: 10px;
 }
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
   .footer-link {
   color: var(--primery-background-color);
-}
-.icon-list {
-  display: flex;
 }
 .icon {
   fill: currentColor;
@@ -356,9 +418,7 @@ align-items: center;
 .portfolio-hero-button:hover {
   color: var(--main-title-color);
   background-color: var(--accent-color);
-}
-.portfolio-hero-item {
-  
+  box-shadow: 1px 1px 3px 2px var(--main-text-color);
 }
 .portfolio-hero-button {
   font-family: Roboto;
@@ -377,6 +437,9 @@ padding: 6px 22px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+}
+.our-products-item:hover {
+box-shadow: 1px 1px 3px 2px var(--main-text-color);
 }
 .our-products-item {
   border-bottom: 1px solid #EEEEEE;
