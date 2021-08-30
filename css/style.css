@@ -78,6 +78,7 @@ height: 16px;
 }
 .header-list {
   display: flex;
+  align-items: center;
 }
 .header-item
 .header-link {
@@ -97,11 +98,13 @@ color: var(--accent-color);
   display: flex;
   align-items: center;
 }
-.icon-tel {
+.icon-tel,
+.icon-mail {
   fill: currentColor;
 }
 .header-tel {
-  display: block;
+  display: flex;
+  align-items: center;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -110,7 +113,8 @@ letter-spacing: 0.02em;
 color: var(--main-text-color) 
 }
 .header-mail {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -258,6 +262,7 @@ letter-spacing: 0.03em;
 
 color: var(--main-text-color);
 }
+/* нижня частина студії */
 .contacts {
   background-color: var(--hero-footer-background-color);
 display: flex;
@@ -266,7 +271,10 @@ padding-bottom: 60px;
 }
 .contacts-container {
   display: flex;
-  flex-direction: column; 
+   
+}
+.container-footer{
+  flex-direction: column;
 }
 .contacts-address {
   font-style: normal;
@@ -291,6 +299,9 @@ color: rgba(255, 255, 255, 0.6);
 .contacts-link:focus {
 color: var(--accent-color);
 }
+.icon-list{
+  display: flex;
+}
 .contacts-logo {
   font-family: Raleway;
   font-weight: bold;
@@ -306,6 +317,26 @@ margin-bottom: 20px;
 span {
   color: var(--accent-color);
 }
+.name-footer {
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: var(--primery-background-color);
+}
+.footer-items::not(:last-child) {
+    margin-right: 10px;
+}
+  .footer-link {
+  color: var(--primery-background-color);
+}
+.icon-list {
+  display: flex;
+}
+.icon {
+  fill: currentColor;
+}
+/* головна портфоліо */
 .portfolio-hero {
 display: flex;
 }
