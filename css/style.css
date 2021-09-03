@@ -134,7 +134,7 @@ justify-content: space-between;
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../img/fon-min.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), ../img/fon-min.jpg);
 
 }
 .hero-container {
@@ -171,7 +171,7 @@ width: 200px;
 height: 50px;
 }
 .features {
-  background-color: var(--secondary-background-color);
+  background-color: var(--primery-background-color);
   display: flex;
   padding-bottom: 92px;
 }
@@ -184,7 +184,7 @@ height: 50px;
 }
 .features-list  {
   display: flex;
-  
+
 }
 .features-title {
   font-weight: bold;
@@ -198,8 +198,16 @@ margin-bottom: 10px;
 }
 .features-items {
   width: 270px;
-height: 101px;
 flex-direction: column;
+}
+.container-icon-feature {
+  display: flex;
+  width: 100%;
+  justify-content: center;  
+}
+.icon-features {
+  display: flex;
+  margin: 25px auto;
 }
 .features-text {
   font-size: 14px;
@@ -208,12 +216,7 @@ letter-spacing: 0.03em;
 
 color: var(--main-text-color);
 }
-.icon-features {
-justify-content: center;
-align-items: center;
-}
 .images {
-  background-color: var(--secondary-background-color);
   display: flex;
   padding-top: 0px;
 }
@@ -251,7 +254,8 @@ color: var(--secondary-title-color);
 margin-bottom: 50px;
 }
 .team-item {
-  box-shadow: 1px 1px 3px 2px var(--main-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-name-container {
   padding-top: 30px;
@@ -393,7 +397,13 @@ color: var(--primery-background-color);
   background-color: var(--accent-color);
 }
   .footer-link {
+    display: flex;
   color: var(--primery-background-color);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .icon {
   fill: currentColor;
@@ -418,7 +428,8 @@ align-items: center;
 .portfolio-hero-button:hover {
   color: var(--main-title-color);
   background-color: var(--accent-color);
-  box-shadow: 1px 1px 3px 2px var(--main-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .portfolio-hero-button {
   font-family: Roboto;
