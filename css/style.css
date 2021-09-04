@@ -130,11 +130,11 @@ justify-content: space-between;
   }
   
 .hero {
-  background-color: var(--hero-footer-background-color);
+  
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image:linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
 }
 .hero-container {
 display: flex;
@@ -205,6 +205,7 @@ flex-direction: column;
   width: 100%;
   justify-content: center;
   background-color: #F5F4FA; 
+  margin-bottom: 30px;
 }
 .icon-features {
   display: flex;
@@ -283,7 +284,12 @@ letter-spacing: 0.03em;
 color: var(--main-text-color);
 }
 .icon-list {
-  padding-bottom: 30px;
+  display: flex;
+  width: 206px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+  margin-bottom: 30px;
 }
 .icon-group:hover,
 .icon-group:focus {
@@ -342,8 +348,7 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 .contacts-container {
-  display: flex;
-   
+  display: flex;   
 }
 .container-footer{
   flex-direction: column;
@@ -371,10 +376,6 @@ color: rgba(255, 255, 255, 0.6);
 .contacts-link:focus {
 color: var(--accent-color);
 }
-.icon-list{
-  display: flex;
-  justify-content: space-around;
-}
 .contacts-logo {
   display: flex;
   font-family: Raleway;
@@ -387,7 +388,6 @@ color: var(--main-title-color);
 width: 145px;
 height: 31px;
 margin-bottom: 20px;
-margin-right: 156px;
 }
 span {
   color: var(--accent-color);
@@ -396,17 +396,25 @@ span {
   display: flex;
   flex-direction: column;
   width: 206px;
-height: 80px;
-
+  margin-left: 70px;
 }
 .name-footer {
-  display: block;
+  display: flex;
   margin-bottom: 20px;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-color: var(--primery-background-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-background-color);
+}
+.icon-list-footer {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+.footer-items {
+  display: flex;
 }
 .footer-items::not(:last-child) {
     margin-right: 10px;
